@@ -1,0 +1,9 @@
+nums1=[1,2,3,4,5]
+nums2=[1,7,9,10,35]
+
+def printStuff(arr):
+  arr.reverse()
+  print(arr)
+  
+printStuff(nums1)
+printStuff(nums2)
