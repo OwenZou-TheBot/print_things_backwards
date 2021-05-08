@@ -2,11 +2,11 @@ nums1=[1,2,3,4,5]
 nums2=[1,7,9,10,35]
 
 def printStuff(arr, move):
-  x = move
-  while x>0:
-    arr = arr[-1:]+arr[0:-1]
-    x=x-1
-  print (arr)
+  x=move
+  if x>0:
+    arr.insert(0,arr.pop())
+    x=x+1
+  print(arr)
 
-printStuff(nums1,3)
+printStuff(nums1,1)
 printStuff(nums2,2)
